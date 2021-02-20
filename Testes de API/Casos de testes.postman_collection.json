@@ -1,0 +1,102 @@
+{
+	"info": {
+		"_postman_id": "7ff7bff6-d5fd-4d16-803e-9fe42fb58751",
+		"name": "Casos de testes",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "inm-test-api.herokuapp.com/empregado/list_all",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "automacao",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "inmetrics",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "inm-test-api.herokuapp.com/empregado/list_all",
+					"host": [
+						"inm-test-api",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"empregado",
+						"list_all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "inm-test-api.herokuapp.com/empregado/cadastrar",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"admissao\": \"18/02/2021\",\r\n  \"cargo\": \"Desenvolvedor\",\r\n  \"comissao\": \"1.000,00\",\r\n  \"cpf\": \"778.201.210-41\",\r\n  \"departamentoId\": 1,\r\n  \"nome\": \"Andre\",\r\n  \"salario\": \"1.000,00\",\r\n  \"sexo\": \"m\",\r\n  \"tipoContratacao\": \"clt\"\r\n}"
+				},
+				"url": {
+					"raw": "inm-test-api.herokuapp.com/empregado/cadastrar",
+					"host": [
+						"inm-test-api",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"empregado",
+						"cadastrar"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "value",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "inm-test-api.herokuapp.com/empregado/list/57",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "inm-test-api.herokuapp.com/empregado/list/57",
+					"host": [
+						"inm-test-api",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"empregado",
+						"list",
+						"57"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
